@@ -18,7 +18,7 @@ body {
     position: relative;
 }
 
-.main .box {
+.box {
     height: 644px;
     width: 100%;
     opacity: 0.69;
@@ -28,7 +28,7 @@ body {
 }
 
 nav {
-    max-width: 60vw;
+    max-width: 98vw;
     justify-content: space-between;
     margin: auto;
     display: flex;
@@ -40,15 +40,13 @@ nav img {
     color: red;
     width: 130px;
     position: relative;
+    left: 0%;
     z-index: 10;
 }
-
 nav button {
+    border-radius: 30px;
     position: relative;
     z-index: 10;
-}
-.email{
-    border: none;
 }
 .hero {
     font-family: 'Martel Sans', sans-serif;
@@ -97,7 +95,7 @@ button{
     font-weight: 400;
     color: white;
     background-color: rgba(248, 243, 243, 0.021);
-    border-radius: 4px;
+    border-radius: 40px;
     /* border: 1px solid white; */
     cursor: pointer;
 
@@ -108,13 +106,13 @@ button{
     color: white;
     padding: 3px 24px;
     font-size: 20px;
-    border-radius: 4px;
+    border-radius: 40px;
     font-weight: 400;
 }
 
 .btn-red-sm {
     background-color: red;
-    color: white;
+    color: whitesmoke;
 }
 
 .hero-buttons {
@@ -186,7 +184,7 @@ section.first>div :nth-child(2) {
 }
 
 .faq {
-    background: black;
+    background-color: black;
     color: white;
     padding: 34px;
 }
@@ -201,6 +199,7 @@ section.first>div :nth-child(2) {
 }
 
 .faqbox {
+    border-radius: 30px;
     transition: all 1s ease-out;
     font-size: 24px;
     display: flex;
