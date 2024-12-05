@@ -9,9 +9,8 @@
 body {
     background-color: black;
 }
-
 .main {
-    background-image: url("assets/images/bg.jpg");
+    background-image: url("bg.jpg");
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
@@ -48,7 +47,9 @@ nav button {
     position: relative;
     z-index: 10;
 }
-
+.email{
+    border: none;
+}
 .hero {
     font-family: 'Martel Sans', sans-serif;
     height: calc(100% - 100px);
@@ -60,6 +61,7 @@ nav button {
     position: relative;
     gap: 23px;
     padding: 0 30px;
+    text-wrap: pretty;
 }
 
 .hero> :nth-child(1) {
@@ -87,14 +89,16 @@ nav button {
     position: relative;
     z-index: 20;
 }
-
+button{
+    border: none;
+}
 .btn {
     padding: 3px 8px;
     font-weight: 400;
     color: white;
     background-color: rgba(248, 243, 243, 0.021);
     border-radius: 4px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     cursor: pointer;
 
 }
