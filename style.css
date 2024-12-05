@@ -28,12 +28,12 @@ body {
 }
 
 nav {
-    max-width: 98vw;
+    max-width: 97vw;
     justify-content: space-between;
     margin: auto;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 98px;
 }
 
 nav img {
