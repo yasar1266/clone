@@ -28,12 +28,16 @@ body {
 }
 
 nav {
+<<<<<<< HEAD
     max-width: 90vw;
+=======
+    max-width: 97vw;
+>>>>>>> 9b30b353598c6e6d80ab3bef68ffa1dfda846998
     justify-content: space-between;
     margin: auto;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 98px;
 }
 
 nav img {
@@ -331,5 +335,10 @@ footer .questions {
 .footer-item {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     gap: 24px;
 }
+=======
+    gap: 23px;
+}
+>>>>>>> 9b30b353598c6e6d80ab3bef68ffa1dfda846998
