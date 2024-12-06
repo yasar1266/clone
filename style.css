@@ -14,12 +14,12 @@ body {
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
-    height: 644px;
+    height: 630px;
     position: relative;
 }
 
 .box {
-    height: 644px;
+    height: 630px;
     width: 100%;
     opacity: 0.69;
     position: absolute;
@@ -28,7 +28,7 @@ body {
 }
 
 nav {
-    max-width: 98vw;
+    max-width: 90vw;
     justify-content: space-between;
     margin: auto;
     display: flex;
@@ -51,6 +51,9 @@ nav button {
 .hero {
     font-family: 'Martel Sans', sans-serif;
     height: calc(100% - 100px);
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,13 +68,13 @@ nav button {
 .hero> :nth-child(1) {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 48px;
+    font-size: 50px;
     text-align: center;
 }
 
 .hero> :nth-child(2) {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 34px;
     text-align: center;
 }
 
@@ -82,20 +85,24 @@ nav button {
 }
 
 .separation {
-    height: 7px;
-    background-color: rgb(46, 44, 44);
+    border-radius: 30px;
+    height: 5px;
+    background-color: rgb(21 19 22);
     position: relative;
     z-index: 20;
+    display: flex;
+    flex-direction: column;
 }
 button{
     border: none;
 }
 .btn {
-    padding: 3px 8px;
-    font-weight: 400;
+    padding: 0px 11px;
+    font-weight: 500;
+    font-size: 16px;
     color: white;
     background-color: rgba(248, 243, 243, 0.021);
-    border-radius: 40px;
+    border-radius: 30px;
     /* border: 1px solid white; */
     cursor: pointer;
 
@@ -104,12 +111,22 @@ button{
 .btn-red {
     background-color: red;
     color: white;
-    padding: 3px 24px;
+    /* max-width: 800px; */
+    padding: 3px 15px;
+    margin-top: 4px;
     font-size: 20px;
     border-radius: 40px;
-    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: ; */
+    font-weight: 300;
 }
-
+.email{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
 .btn-red-sm {
     background-color: red;
     color: whitesmoke;
@@ -117,6 +134,7 @@ button{
 
 .hero-buttons {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 16px;
@@ -126,70 +144,75 @@ button{
     padding: 7px 101px 8px 14px;
     color: white;
     font-size: 12px;
-    border-radius: 4px;
+    border-radius: 14px;
+    /* border-color: #414141 ;!important */
     background-color: rgba(23, 23, 23, 0.7);
-    border: 1px solid rgba(246, 238, 238, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.671);
 }
 
 .first {
     display: flex;
     justify-content: center;
-    max-width: 70vw;
+    max-width: 90vw;
+    gap: 120px;
     margin: auto;
     color: white;
     justify-content: center;
     align-items: center;
 }
-
-
-
 .secImg {
     position: relative;
 }
-
 .secImg img {
     width: 555px;
     position: relative;
     z-index: 10;
 }
-
 .secImg video {
     position: absolute;
     top: 51px;
-    right: 0;
-    width: 555px;
+    /* right: 0; */
+    width: 550px;
 }
-
 section.first>div {
     display: flex;
     flex-direction: column;
+    max-width: 90vw;
+    width: 600px;
+    margin: auto;
     padding: 34px 0;
 }
-
 section.first>div :nth-child(1) {
-    font-size: 48px;
+    font-size: 50px;
     font-weight: bolder;
 }
-
-
 section.first>div :nth-child(2) {
-    font-size: 24px;
+    font-size: 30px;
 
 }
 
 
 .faq h2 {
+    max-width: 90vw;
+    width: 600px;
+    margin: auto;
     text-align: center;
     font-size: 48px;
 }
 
 .faq {
+    max-width: 90vw;
+    width: 826px;
+    margin: auto;
     background-color: black;
     color: white;
     padding: 34px;
 }
 
 .faqbox:hover {
+    max-width: 90vw;
+    width: 600px;
+    margin: auto;
     background-color: #414141;
     color: white;
 }
@@ -213,13 +236,15 @@ section.first>div :nth-child(2) {
 
 footer {
     color: white;
-    max-width: 60vw;
+    max-width: 100vw;
+    max-height: 90vw;
     margin: auto;
-    padding: 60px;
+    padding: 30px;
 }
 
 footer .questions {
-    padding: 34px 0;
+    /* padding: 10px; */
+    padding-bottom: 30px;
 }
 
 
@@ -299,12 +324,12 @@ footer .questions {
 
 
 .footer a {
-    font-size: 14px;
+    font-size: 15px;
     color: white;
 }
 
 .footer-item {
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: 24px;
 }
