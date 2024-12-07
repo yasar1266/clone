@@ -7,6 +7,7 @@
 }
 
 body {
+
     background-color: black;
 }
 .main {
@@ -60,34 +61,36 @@ nav button {
     flex-direction: column;
     color: white;
     position: relative;
-    gap: 23px;
-    padding: 0 30px;
+    gap: 0px;
+    /* padding: 0 30px; */
     text-wrap: pretty;
 }
 
 .hero> :nth-child(1) {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 50px;
+    max-width: 700px;
+    font-size: 70px;
     text-align: center;
 }
 
 .hero> :nth-child(2) {
     font-weight: 400;
-    font-size: 34px;
+    font-size: 20px;
     text-align: center;
 }
 
 .hero> :nth-child(3) {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 20    px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .separation {
-    border-radius: 30px;
-    height: 5px;
-    background-color: rgb(21 19 22);
+    border-radius: 40px;
+    height: 4px;
+    background-color:rgba(88, 88, 88, 0.226);
     position: relative;
     z-index: 20;
     display: flex;
@@ -114,10 +117,10 @@ button{
     /* max-width: 800px; */
     padding: 3px 15px;
     margin-top: 4px;
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     /* align-items: ; */
     font-weight: 300;
@@ -134,7 +137,9 @@ button{
 
 .hero-buttons {
     display: flex;
-    flex-direction: column;
+    padding-top: 4px;
+    flex-direction: row;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     gap: 16px;
@@ -143,18 +148,18 @@ button{
 .main input {
     padding: 7px 101px 8px 14px;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     border-radius: 14px;
     /* border-color: #414141 ;!important */
     background-color: rgba(23, 23, 23, 0.7);
-    border: 1px solid rgba(0, 0, 0, 0.671);
+    border: 1.5px solid rgba(97, 95, 95, 0.71);
 }
 
 .first {
     display: flex;
     justify-content: center;
-    max-width: 90vw;
-    gap: 120px;
+    max-width: 100%;
+    gap: 20px;
     margin: auto;
     color: white;
     justify-content: center;
@@ -167,20 +172,23 @@ button{
     width: 555px;
     position: relative;
     z-index: 10;
+    max-width: 100%;
 }
 .secImg video {
     position: absolute;
     top: 51px;
     /* right: 0; */
     width: 550px;
+    max-width: 100%;
 }
 section.first>div {
     display: flex;
+    /* align-items: center; */
     flex-direction: column;
     max-width: 90vw;
     width: 600px;
     margin: auto;
-    padding: 34px 0;
+    padding: 34px;
 }
 section.first>div :nth-child(1) {
     font-size: 50px;
@@ -189,6 +197,10 @@ section.first>div :nth-child(1) {
 section.first>div :nth-child(2) {
     font-size: 30px;
 
+}
+.second{
+    display: flex;
+    /* flex-direction: row-reverse; */
 }
 
 
@@ -206,7 +218,7 @@ section.first>div :nth-child(2) {
     margin: auto;
     background-color: black;
     color: white;
-    padding: 34px;
+    /* padding: 34px; */
 }
 
 .faqbox:hover {
@@ -233,32 +245,43 @@ section.first>div :nth-child(2) {
     margin: 34px auto;
     cursor: pointer;
 }
-a{
-    padding: 4px;
-    margin: 3px;
-}
 footer {
     color: white;
-    max-width: 200vw;
-    max-height: 90vw;
+    /* max-width: 200vw; */
+    /* max-height: 90vw; */
     margin: auto;
     width: auto;
+    height: auto;
+    max-height: 100%;
     /* margin: 25px; */
-    padding: 25px;
-    padding-left: 30px;
-
+    padding: 35px;
 }
-
-footer .questions {
-    /* padding: 10px; */
-    padding-bottom: 30px;
+.questions{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-left: 35px;
 }
-
-
-.footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+a{
     color: white;
+    padding: 20px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-it{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: space-between ;
+        padding: auto;
+        margin: auto;
+}
+.footer-item{
+    display: table-row-group;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
@@ -273,13 +296,6 @@ footer .questions {
         flex-wrap: wrap;
     }
 
-    .secImg img {
-        width: 305px;
-    }
-
-    .secImg video {
-        width: 305px;
-    }
 
     .hero> :nth-child(1) {
         font-size: 32px;
@@ -306,42 +322,5 @@ footer .questions {
         font-size: 32px;
     }
 
-    footer {
-        max-width: 90vw;
-        padding: 75px 0;
-    }
-
-    .footer-item{
-        align-items: center;
-    }
- 
 
 }
-
-
-
-@media screen and (max-width: 1300px) {
-
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
-}
-
-
-.footer a {
-    font-size: 15px;
-    color: white;
-}
-
-.footer-item {
-    display: flex;
-    flex-direction: column;
-<<<<<<< HEAD
-    gap: 24px;
-}
-=======
-    gap: 23px;
-}
->>>>>>> 9b30b353598c6e6d80ab3bef68ffa1dfda846998
